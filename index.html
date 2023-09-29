@@ -5,7 +5,6 @@
 <body>
 
  <center> <h1> Islamic Society of Kingsville (ISK) </h1> </center>
- 
 <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
     p{
@@ -32,8 +31,33 @@
     }
 
 
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
 </style>
 <body>
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
 
     <div>
 
@@ -108,8 +132,10 @@ const getCurrentTimeDate = () => {
 
     </script>
 
+  </div>
+  <div class="column" style="background-color:#bbb;">
 
-<canvas id="my_canvas" width="520" height="510"  ></canvas>
+<canvas id="my_canvas" width="1200" height="230"  ></canvas>
 <script>
 
 var angle_jump=6;
@@ -282,6 +308,12 @@ my_time=setTimeout('my_function()',speed)
 }
 /////////
 my_function();
+</script>
+
+
+  </div>
+</div>
+	
 </script>
 
 	<center> <h1> Prayer Times in Kingsville, TX. </h1> </center>
