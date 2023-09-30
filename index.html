@@ -118,11 +118,11 @@
 
               // Calculate Iqama times (azan-time + 5 minutes)
               $('#fajr-iqama').text(addMinutes(prayerTimes.fajr, 20));
-              $('#shurooq-iqama').text(addMinutes(prayerTimes.shurooq, 0));
-              $('#dhuhr-iqama').text(addMinutes(prayerTimes.dhuhr, 5));
-              $('#asr-iqama').text(addMinutes(prayerTimes.asr, 5));
+              $('#shurooq-iqama').text(addMinutes(prayerTimes.shurooq, 20));
+              $('#dhuhr-iqama').text(addMinutes(prayerTimes.dhuhr, 30));
+              $('#asr-iqama').text(addMinutes(prayerTimes.asr, 30));
               $('#maghrib-iqama').text(addMinutes(prayerTimes.maghrib, 5));
-              $('#isha-iqama').text(addMinutes(prayerTimes.isha, 5));
+              $('#isha-iqama').text(addMinutes(prayerTimes.isha, 15));
           });
 
           function addMinutes(time, minutes) {
