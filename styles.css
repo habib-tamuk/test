@@ -1,0 +1,173 @@
+
+    p{
+        display: inline;
+        margin: 5px;
+    }
+
+    #time {
+        font-size: 60px;
+        color: #004AAD;
+    }
+
+    #day{
+        font-size: 40px;
+        color: #FF5757;
+    }
+
+    #date,#date1, #hijriDate{ 
+        font-size:20px;
+        color: #FF5757;
+    }
+    div{
+        font-family: 'Fredoka One', cursive;
+    }
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+#dateContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#dateContainer div {
+  margin: 0 10px;
+  padding: 15px 20px;
+  border: 0px solid #4285f4;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#dateContainer div:first-child {
+  border-color: #ea4335;
+}
+
+#dateContainer div:last-child {
+  border-color: #34a853;
+}
+
+/* 
+body {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+/* .container {
+  padding: 20px;
+  width: 1200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.city-date {
+  color: #333;
+}
+
+#currentDateTime, #currentDate {
+  font-weight: 0;
+  font-size: 0;
+
+}
+.city {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.date {
+  font-weight: 200;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.azan-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.azan-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px; /* Added a minimum width to the cards */
+}
+
+.azan-name {
+  background: linear-gradient(to right, #eb3348, #f45c43);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* ... Other CSS styles ... */
+
+/* Style for Azan time */
+.azan-time {
+  color: #333;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;  /* Light blue background for Azan time */
+}
+
+/* Style for Iqama time */
+.iqama-time {
+  color: #333;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #e6f7ff; 
+  /* Light gray background for Iqama time */
+}
+
