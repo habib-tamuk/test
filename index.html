@@ -66,7 +66,7 @@
           <div class="azan-time" id="fajr"></div>
           <div class="iqama-time" id="fajr-iqama"></div>
       </div>
-      <!-- <div class="azan-card" id="dhuhr-card">
+      <!-- <div class="azan-card" id="shurooq-card">
         <div class="azan-name">Shurooq</div>
         <div class="azan-time" id="shurooq"></div>
         <div class="iqama-time" id="shurooq-iqama">2:00 PM</div>
@@ -79,7 +79,7 @@
       <div class="azan-card" id="asr-card">
           <div class="azan-name">Asr</div>
           <div class="azan-time" id="asr"></div>
-          <div class="iqama-time" id="asr-iqama"></div>
+          <div class="iqama-time" id="asr-iqama">5:15 pm</div>
       </div>
       <div class="azan-card" id="maghrib-card">
           <div class="azan-name">Maghrib</div>
@@ -89,12 +89,12 @@
       <div class="azan-card" id="isha-card">
           <div class="azan-name">Isha</div>
           <div class="azan-time" id="isha"></div>
-          <div class="iqama-time" id="isha-iqama"></div>
+          <div class="iqama-time" id="isha-iqama">8:40 pm</div>
       </div>
-      <div class="azan-card" id="isha-card">
+      <div class="azan-card" id="jumma-card">
           <div class="azan-name">Jumaa</div>
-          <div class="azan-time" id="isha">2:00 pm</div>
-          <div class="iqama-time" id="isha-iqama">2:00 pm</div>
+          <div class="azan-time" id="jumma">2:00 pm</div>
+          <div class="iqama-time" id="jumma-iqama">2:00 pm</div>
       </div>
   </div>
 </div>
@@ -117,12 +117,12 @@
               $('#isha').text(prayerTimes.isha);
 
               // Calculate Iqama times (azan-time + 5 minutes)
-              $('#fajr-iqama').text(addMinutes(prayerTimes.fajr, 20));
+              //$('#fajr-iqama').text(addMinutes(prayerTimes.fajr, 20));
               $('#shurooq-iqama').text(addMinutes(prayerTimes.shurooq, 20));
-              $('#dhuhr-iqama').text(addMinutes(prayerTimes.dhuhr, 30));
-              $('#asr-iqama').text(addMinutes(prayerTimes.asr, 30));
+              //$('#dhuhr-iqama').text(addMinutes(prayerTimes.dhuhr, 30));
+              //$('#asr-iqama').text(addMinutes(prayerTimes.asr, 30));
               $('#maghrib-iqama').text(addMinutes(prayerTimes.maghrib, 5));
-              $('#isha-iqama').text(addMinutes(prayerTimes.isha, 15));
+              //$('#isha-iqama').text(addMinutes(prayerTimes.isha, 15));
           });
 
           function addMinutes(time, minutes) {
