@@ -51,8 +51,8 @@
 }
 
 #dateContainer {
-  display: flex; 
-  /* display: center; */ 
+  /* display: flex;  */ 
+  display: center;
   justify-content: center;
   margin-top: 20px;
 }
