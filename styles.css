@@ -2,6 +2,7 @@
     p{
         display: inline;
         margin: 5px;
+        text-align: center; 
     }
 
     #time {
