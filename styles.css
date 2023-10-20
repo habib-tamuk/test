@@ -1,3 +1,22 @@
+.clock-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#time {
+    font-size: 60px;
+    color: #004AAD;
+}
+
+#day {
+    font-size: 40px;
+    color: #FF5757;
+}
+
+#date {
+    font-size: 20px;
+    color: #FF5757;
+}
 
     p{
         display: inline;
