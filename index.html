@@ -63,7 +63,7 @@
       <div class="azan-card" id="fajr-card">
           <div class="azan-name">Fajr</div>
           <div class="azan-time" id="fajr"></div>
-          <div class="iqama-time" id="fajr-iqama">6:50 am </div>
+          <div class="iqama-time" id="fajr-iqama">6:00 am </div>
       </div>
       <!-- <div class="azan-card" id="shurooq-card">
         <div class="azan-name">Shurooq</div>
@@ -73,12 +73,12 @@
       <div class="azan-card" id="dhuhr-card">
           <div class="azan-name">Dhuhr</div>
           <div class="azan-time" id="dhuhr"></div>
-          <div class="iqama-time" id="dhuhr-iqama">2:00 pm</div>
+          <div class="iqama-time" id="dhuhr-iqama">1:00 pm</div>
       </div>
       <div class="azan-card" id="asr-card">
           <div class="azan-name">Asr</div>
           <div class="azan-time" id="asr"></div>
-          <div class="iqama-time" id="asr-iqama">5:00 pm</div>
+          <div class="iqama-time" id="asr-iqama">3:45 pm</div>
       </div>
       <div class="azan-card" id="maghrib-card">
           <div class="azan-name">Maghrib</div>
@@ -88,7 +88,7 @@
       <div class="azan-card" id="isha-card">
           <div class="azan-name">Isha</div>
           <div class="azan-time" id="isha"></div>
-          <div class="iqama-time" id="isha-iqama">8:10 pm</div>
+          <div class="iqama-time" id="isha-iqama">7:00 pm</div>
       </div>
       <div class="azan-card" id="jumma-card">
           <div class="azan-name">Jumaa</div>
@@ -107,7 +107,7 @@
           $.getJSON('https://muslimsalat.com/kingsville.json?key=API_KEY&jsoncallback=?', function (times) {
               var prayerTimes = times.items[0];
 
-              $('#fajr').text(prayerTimes.fajr);
+              $('#fajr').text(prayerTimes.fajr-1);
           
               $('#shurooq').text(prayerTimes.shurooq);
               $('#dhuhr').text(prayerTimes.dhuhr);
