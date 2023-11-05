@@ -107,7 +107,7 @@
           $.getJSON('https://muslimsalat.com/kingsville.json?key=API_KEY&jsoncallback=?', function (times) {
               var prayerTimes = times.items[0];
 
-              $('#fajr').text(prayerTimes.fajr-1);
+              $('#fajr').text(prayerTimes.fajr);
           
               $('#shurooq').text(prayerTimes.shurooq);
               $('#dhuhr').text(prayerTimes.dhuhr);
